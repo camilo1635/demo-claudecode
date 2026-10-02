@@ -1,3 +1,18 @@
 {
+  "permissions": {
+    "allow": [
+      "PowerShell(npm run *)",
+      "PowerShell(Get-Date *)",
+      "Bash(npm view *)",
+      "Bash(cd *)",
+      "Bash(python -)",
+      "Bash(npx tsc *)",
+      "Bash(npx eslint *)",
+      "Bash(npx vitest *)",
+      "Bash(npm run *)",
+      "PowerShell(npx tsc --noEmit; npx eslint src/components/flash-message.tsx src/lib/flash.ts \"src/app/\\(app\\)/layout.tsx\" \"src/app/\\(app\\)/invoices/actions.ts\"; Select-String -Path src/app/globals.css -Pattern \"--color-\\(ok|danger\\)\")",
+      "PowerShell(foreach\\($p in '/invoices','/invoices','/invoices/new','/invoices/new','/clients'\\){ $t=Measure-Command { Invoke-WebRequest \"http://localhost:3000$p\" -UseBasicParsing | Out-Null }; \"$p {0}ms\" -f [int]$t.TotalMilliseconds })"
+    ]
+  },
   "spinnerTipsEnabled": true
 }
